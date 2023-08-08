@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="20" time="284.684">
+<testcase classname="Register | User Register" name="Enter valid data in Registration Form" time="19.822">
+<system-out><![CDATA[Given user navigate to register page........................................passed
+When User Enter Valid Data..................................................passed
+And Press Register Button...................................................passed
+Then Verify Successful Registration.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register | User Register" name="User Enter Invalid Data In Registration Form" time="12.765">
+<system-out><![CDATA[Given user navigate to register page........................................passed
+When User Enter Invalid Data................................................passed
+And Press Register Button...................................................passed
+Then Verify UnsSuccessful Registration......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | User Enter Email And Password (Login Form)" name="User Enter Valid Data In Login Form" time="14.665">
+<system-out><![CDATA[Given User Navigate To Login Form...........................................passed
+When User Enter Valid Email & Password......................................passed
+And Press Login Button......................................................passed
+Then Verify Successful Login................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | User Enter Email And Password (Login Form)" name="User Enter Invalid Data In Login Form" time="11.185">
+<system-out><![CDATA[Given User Navigate To Login Form...........................................passed
+When User Enter Invalid Email & Password....................................passed
+And Press Login Button......................................................passed
+Then Verify UnsSuccessful Login.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Currencies | Check Euro Symbol For Each Product" name="Select Euro Currency From Drop Down List" time="12.036">
+<system-out><![CDATA[When Choose Euro From DropDown List.........................................passed
+Then Verify Each Product Has Euro Symbol....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | User Search For Product" name="User Search Using Book" time="11.188">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When User Search With Book..................................................passed
+And Click Search Button.....................................................passed
+And Choose Display Per Page 9...............................................passed
+Then Verify Search Result Matches Book The User Entered.....................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at org.example.Step_Definition.TC04_Search.BookAssertion(TC04_Search.java:54)
+	at ✽.Verify Search Result Matches Book The User Entered(file:///C:/Users/user/IdeaProjects/Tutorial_Testing/src/main/resources/Features/F04_Search.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Search | User Search For Product" name="User Search Using Laptop" time="11.869">
+<system-out><![CDATA[When User Search With Laptop................................................passed
+And Click Search Button.....................................................passed
+And Choose Display Per Page 9...............................................passed
+Then Verify Search Result Matches Laptop The User Entered...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | User Search For Product" name="User Search Using Nike" time="16.033">
+<system-out><![CDATA[When User Search With Nike..................................................passed
+And Click Search Button.....................................................passed
+And Choose Display Per Page 9...............................................passed
+Then Verify Search Result Matches Nike The User Entered.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | User Search For Product" name="User Search Using SCI_FAITH" time="12.12">
+<system-out><![CDATA[When User Search Using SCI_FAITH............................................passed
+And Click Search Button.....................................................passed
+And Choose Product Based On SCI_FAITH.......................................passed
+Then Verify Search Result Matches SCI_FAITH The User Entered................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | User Search For Product" name="User Search Using APPLE_CAM" time="15.963">
+<system-out><![CDATA[When User Search Using APPLE_CAM............................................passed
+And Click Search Button.....................................................passed
+And Choose Product Based On APPLE_CAM.......................................passed
+Then Verify Search Result Matches APPLE_CAM The User Entered................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | User Search For Product" name="User Search Using SF_PRO_11" time="11.636">
+<system-out><![CDATA[When User Search Using SF_PRO_11............................................passed
+And Click Search Button.....................................................passed
+And Choose Product Based On SF_PRO_11.......................................passed
+Then Verify Search Result Matches SF_PRO_11 The User Entered................passed
+]]></system-out>
+</testcase>
+<testcase classname="MouseHovering | User Hover On Categories" name="User Mouse Hover on Computers Category" time="12.506">
+<system-out><![CDATA[When User Hover On Computer Category........................................passed
+Then Verify Computer Category Contains Three SubCategories..................passed
+And Click NoteBooks SubCategory.............................................passed
+Then Verify You Are On NoteBooks Page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Slider | User Check Home Sliders For Home Page" name="User Check First Slider In Home Page" time="9.774">
+<failure message="expected [https://demo.nopcommerce.com/samsung-galaxy-s22] but found [https://demo.nopcommerce.com/#]" type="java.lang.AssertionError"><![CDATA[When User Click On First Slider.............................................passed
+Then Verify Url Have Changed................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/samsung-galaxy-s22] but found [https://demo.nopcommerce.com/#]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.example.Step_Definition.TC06_HomeSlider.first_slider_assertion(TC06_HomeSlider.java:21)
+	at ✽.Verify Url Have Changed(file:///C:/Users/user/IdeaProjects/Tutorial_Testing/src/main/resources/Features/F06_HomeSlider.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Home Slider | User Check Home Sliders For Home Page" name="User Check Second Slider In Home Page" time="9.328">
+<failure message="expected [https://demo.nopcommerce.com/iphone-14-pro] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[When User Click On Second Slider............................................passed
+Then Verify Actual Url Matches Expected Url.................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-14-pro] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.example.Step_Definition.TC06_HomeSlider.second_slider_assertion(TC06_HomeSlider.java:33)
+	at ✽.Verify Actual Url Matches Expected Url(file:///C:/Users/user/IdeaProjects/Tutorial_Testing/src/main/resources/Features/F06_HomeSlider.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Follow Us | User Click On Social Links of NopCommerce Below" name="User Click On Facebook Link From Follow us" time="15.623">
+<system-out><![CDATA[When User Opens Facebook Link In Another Tab................................passed
+Then Verify Facebook Link...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow Us | User Click On Social Links of NopCommerce Below" name="User Click On Twitter Link From Follow us" time="14.919">
+<system-out><![CDATA[When User Opens Twitter Link In Another Tab.................................passed
+Then Verify Twitter Link....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow Us | User Click On Social Links of NopCommerce Below" name="User Click On RSS Link From Follow us" time="14.684">
+<failure message="expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[When User Opens RSS Link In Another Tab.....................................passed
+Then Verify RSS Link........................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.example.Step_Definition.TC07_FollowUs.RSS_Assertion(TC07_FollowUs.java:59)
+	at ✽.Verify RSS Link(file:///C:/Users/user/IdeaProjects/Tutorial_Testing/src/main/resources/Features/F07_FollowUs.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Follow Us | User Click On Social Links of NopCommerce Below" name="User Click On YouTube Link From Follow us" time="22.213">
+<system-out><![CDATA[When User Opens YouTube Link In Another Tab.................................passed
+Then Verify YouTube Link....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="WishList | User Add Product To WishList" name="User Select Product To Be Added To WishList" time="21.214">
+<system-out><![CDATA[When User Click On Product To Be Added To WishList..........................passed
+Then Verify Success Message Displayed With Green Background Color...........passed
+]]></system-out>
+</testcase>
+<testcase classname="WishList | User Add Product To WishList" name="User Check Wish List Isn't Empty" time="14.645">
+<system-out><![CDATA[When User Select Product And Add It To Wish List............................passed
+Then Verify Quantity in Wish List Is not Zero...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
